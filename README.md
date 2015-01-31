@@ -1,7 +1,8 @@
 btcValidator
 ======
 
-A desktop app to validate bitcoin address. Based on Tkinte 
+A desktop app to validate bitcoin address. Based on Tkinter
+MVC pattern.
 
 ####Dependency
 python-bitcoinaddress, python-tkinter
