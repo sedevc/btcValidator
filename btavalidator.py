@@ -14,6 +14,7 @@ class MyController():
         self.view.setLabel_text(self.view.entry_text.get() + self.model.validateAddress(self.view.entry_text.get()))
 
 
+
 class MyView(Frame):
     def loadView(self):
         entry = Entry(self.frame, width = 45, textvariable = self.entry_text).grid(row = 0, column = 0, pady = 10, padx = 10, sticky = EW)
