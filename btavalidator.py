@@ -52,6 +52,7 @@ def main():
     root.geometry("500x100")
     app = MyController(root)
     root.mainloop()  
- 
+
+
 if __name__ == '__main__':
     main() 
