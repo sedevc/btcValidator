@@ -52,11 +52,6 @@ class MyView(Frame):
 class MyModel():
     def __init__(self,vc):
         pass
-    def validateAddress(self, address):
-        if validate(address):
-            return ' is OK'
-        else:
-            return ' is invalid'
 
 def main():
     root = Tk()
