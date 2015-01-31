@@ -2,6 +2,7 @@ btcValidator
 ======
 
 A desktop app to validate bitcoin address. Based on Tkinter
+
 MVC pattern.
 
 ####Dependency
