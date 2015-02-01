@@ -24,7 +24,7 @@ Thumbs.db
 *.sbr
 *.spec
 *.icns
-.idea
+.idea/
 build/
 dist/
 obj/
