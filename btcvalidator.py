@@ -1,6 +1,16 @@
-
+import os
 from bitcoinaddress import validate
 from Tkinter import *
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 class MyController():
     def __init__(self,parent):
@@ -25,8 +35,8 @@ class MyView(Frame):
         self.label = Label(self.frame,textvariable = self.label_text).grid(row = 1, column = 0, pady = 10, padx = 10, sticky = EW)
         self.addButton = Button(self.frame,text = "Validate", command = self.vc.validateButtonPressed).grid(row = 0, column = 1)
         self.quitButton = Button(self.frame,text = 'Quit', command= self.vc.quitButtonPressed).grid(row = 0, column = 2)
-        self.redimg = PhotoImage(file="red.gif")
-        self.greenimg = PhotoImage(file="green.gif")
+        self.redimg = PhotoImage(file=resource_path("red.gif"))
+        self.greenimg = PhotoImage(file=resource_path("green.gif"))
 
     def setGreenImg(self):
         self.checkmark = Label(self.frame, image=self.greenimg).grid(row = 1, column = 2)
