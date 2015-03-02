@@ -32,6 +32,3 @@ cd btcValidator
 sudo python btcvalidator.py
 ```
 
-
-
-
