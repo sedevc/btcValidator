@@ -21,7 +21,7 @@ pip install python-bitcoinaddress
 ```
 
 ```
-https://github.com/sedevc/btcValidator.git
+git clone https://github.com/sedevc/btcValidator.git
 ```
 
 ```
