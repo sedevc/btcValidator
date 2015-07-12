@@ -17,7 +17,7 @@ python-bitcoinaddress, python-tkinter
 ####Installation
 #####Linux
 ```
-pip install python-bitcoinaddress
+sudo pip install python-bitcoinaddress
 ```
 
 ```
